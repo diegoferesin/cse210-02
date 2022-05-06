@@ -4,7 +4,6 @@ class Card:
         self.number = random.randint(1,13)
     """
     Individual cards are represented as a number from 1 to 13.
-
     Attributes:
         number (int): The value of the card
     """
