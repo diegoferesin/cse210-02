@@ -52,6 +52,9 @@ class Player:
     def display_points(self):
         print(f"Your score is: {self.points}")
 
+    def display_card(self):
+        print(f"The card is: {self.card.get_number}")
+
     def play_again(self):
         """Asks the player to play again.
 
