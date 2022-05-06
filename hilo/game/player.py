@@ -35,16 +35,6 @@ class Player:
             else:
                 return False
 
-<<<<<<< HEAD
-    def __init__(self):
-        """Constructs a new Player.
-        
-        Args:
-            self (Player): an instance of Player.
-        """
-        self.points = 300
-        pass
-
     def guess():
         """Ask the player for the number to guess if is greater or lower.
 
@@ -68,26 +58,3 @@ class Player:
             self (Player): An instance of Player.
         """
         pass
-=======
-
-    def change_points(self):
-        '''
-        Change points according to accuracy of player's guess;
-        The player earns 100 points if they guess correctly and
-        the player loses 75 points if they guessed incorrectly
-        '''
-        if self.guess(self):
-            points += 100
-        else:
-            points -= 75
-
-    def display_points(self):
-        print(f"Your score is: {self.points}")
-
-    def play_again(self):
-        if self.points > 0:
-            yes_or_no = input("Play again? [y/n]")
-            #prompt another round
-        else:
-            return("Thanks for playing!")
->>>>>>> 44f869775624b94a362e80bca73a204d269e594e
