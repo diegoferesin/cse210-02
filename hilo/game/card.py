@@ -10,5 +10,8 @@ class Card:
     def set_number(self):
         self.number = random.randint(1,13)
     
+    """
+    This method will display the number obtained by the set_number method.
+    """
     def display_number():
         pass
