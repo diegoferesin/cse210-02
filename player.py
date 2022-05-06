@@ -4,7 +4,7 @@ class Player:
     def guess():
         pass
 
-    def change_pints(self):
+    def change_points(self):
         pass
 
     def play_again():
