@@ -21,6 +21,11 @@ class Player:
         '''
 
     def guess(self):
+        """Ask the player to guess if the card card will be greater or lower.
+
+        Args:
+            self (Player): An instance of Player.
+        """
         higher_or_lower = input("Higher or lower? [h/l]")
         next_card = Card()
         print(f"Next card was: {next_card.get_number()}")
@@ -35,26 +40,28 @@ class Player:
             else:
                 return False
 
-    def guess():
-        """Ask the player for the number to guess if is greater or lower.
-
-        Args:
-            self (Player): An instance of Player.
-        """
-        pass
-
     def change_points(self):
-        """Updates the player's score.
+        """Updates the player's score according to the accuracy of their guess
 
         Args:
             self (Player): An instance of Player.
         """
-        pass
+        if self.guess(self):
+            points += 100
+        else:
+            points -= 75
 
-    def play_again():
+    def display_points(self):
+        print(f"Your score is: {self.points}")
+
+    def play_again(self):
         """Asks the player to play again.
 
         Args:
             self (Player): An instance of Player.
         """
-        pass
+        if self.points > 0:
+            yes_or_no = input("Play again? [y/n]")
+            #prompt another round
+        else:
+            return("Thanks for playing!")

@@ -9,6 +9,9 @@ class Card:
         number (int): The value of the card
     """
     def get_number(self):
+        '''
+        Return the value of the card
+        '''
         return self.number
     
     def display_number(self):
