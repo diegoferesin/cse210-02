@@ -40,8 +40,8 @@ root                    (project root folder)
 
 ---
 
-- Diego Feresin
-- Emma Lund
-- Nestor Rivera
-- Juan Castellani
-- Kennette Guevara
+- Diego Feresin (diegoferesin@gmail.com)
+- Emma Lund (lun21010@byui.edu)
+- Nestor Rivera (riv21007@byui.edu)
+- Juan Castellani (cas22009@byui.edu)
+- Kennette Guevara (rod21023@byui.edu)
