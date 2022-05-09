@@ -38,7 +38,19 @@ class Player:
             self.points -= 75
 
     def display_points(self):
+        '''
+        Displays the current number of points of the player
+
+        Args:
+            self (Player): An instance of Player.
+        '''
         print(f"Your score is: {self.get_points()}")
 
     def display_card(self):
-        print(f"\nThe card is: {self.card.get_number()}")
+        '''
+        Displays the player's card's value 
+
+        Args: 
+            self (Player): An instance of Player
+        '''
+        self.card.display_number()
