@@ -1,4 +1,4 @@
-from hilo.game.card import Card
+from game.card import Card
 class Player:
     """
         The player starts the game with 300 points
@@ -18,6 +18,14 @@ class Player:
             self (Player): an instance of a Player
         '''
 
+    def get_points(self):
+        '''
+        Returns the current value of the points attribute
+        Args:
+            self (Player): an instance of a Player
+        '''
+        return self.points
+
     def change_points(self, score):
         """Updates the player's score according to the accuracy of their guess
 
@@ -25,12 +33,12 @@ class Player:
             self (Player): An instance of Player.
         """
         if score:
-            points += 100
+            self.points += 100
         else:
-            points -= 75
+            self.points -= 75
 
     def display_points(self):
-        print(f"Your score is: {self.points}")
+        print(f"Your score is: {self.get_points()}")
 
     def display_card(self):
-        print(f"The card is: {self.card.get_number}")
+        print(f"\nThe card is: {self.card.get_number()}")

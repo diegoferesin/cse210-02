@@ -1,6 +1,6 @@
 from hashlib import new
-import hilo.game.player as player
-import hilo.game.card as card
+import game.player as player
+import game.card as card
 
 player1 = player.Player()
 play="y"
@@ -18,21 +18,21 @@ while player1.points>0 and play.lower()=="y":
     player1.display_card()
     #The current card is deplayed
 
-    guess=input("Higher or lower? [h/l] ")
+    guess = input("Higher or lower? [h/l] ")
 
-    new_card= card.Card()
-    print(f"Next card was: {new_card}")
+    new_card = card.Card()
+    print(f"Next card was: {new_card.get_number()}")
     """
     The new card is stores and displayed.
     """
 
     if guess.lower() == "h":
-        if new_card > player1.card.get_number():
+        if new_card.get_number() > player1.card.get_number():
             player1.change_points(True)
         else:
             player1.change_points(False)
-    elif guess.lower()=="l":
-        if new_card > player1.card.get_number():
+    elif guess.lower() == "l":
+        if new_card.get_number() < player1.card.get_number():
             player1.change_points(True)
         else:
             player1.change_points(False)
@@ -42,13 +42,13 @@ while player1.points>0 and play.lower()=="y":
 
     """        
 
-    player1.card=new_card
+    player1.card = new_card
     #The new card is now the Player's card.
 
 
-    if player1.points <=0:
-        player1.points=0
-        play="n"
+    if player1.points <= 0:
+        player1.points = 0
+        play = "n"
         print("You ran out of point to play.")
     """
     In order to be more visual appealing the score will not go under 0.
@@ -56,8 +56,8 @@ while player1.points>0 and play.lower()=="y":
 
     player1.display_points()   
     #points displayed.
-    if player1.points!=0:             
-        play=input("Play again? [y/n] ")
+    if player1.points != 0:             
+        play = input("Play again? [y/n] ")
 
 print("Thanks for playing!")
         

@@ -14,7 +14,7 @@ class Card:
         return self.number
     
     def display_number(self):
-        print(f"The card is: {self.number}")
+        print(f"The card is: {self.get_number()}")
     """
     This method will display the number obtained by the set_number method.
     """
