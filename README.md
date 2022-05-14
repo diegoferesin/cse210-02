@@ -33,8 +33,12 @@ root                    (project root folder)
 ## Required Technologies
 
 ---
-
 - Python 3.8.0
+
+## UML Diagram
+
+---
+<img src="UML-Diagram.jpg" widt="500px">
 
 ## Authors
 
