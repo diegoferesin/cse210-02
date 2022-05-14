@@ -1,4 +1,4 @@
-from game.card import Card
+from card import Card
 class Player:
     """
         The player starts the game with 300 points
@@ -26,16 +26,7 @@ class Player:
         '''
         return self.points
 
-    def change_points(self, score):
-        """Updates the player's score according to the accuracy of their guess
 
-        Args:
-            self (Player): An instance of Player.
-        """
-        if score:
-            self.points += 100
-        else:
-            self.points -= 75
 
     def display_points(self):
         '''
