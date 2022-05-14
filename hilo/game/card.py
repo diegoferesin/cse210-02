@@ -1,4 +1,8 @@
 import random
+#Module to print with colors
+import colorama
+from colorama import Fore
+
 class Card:
     def __init__(self):
         self.number = random.randint(1,13)
@@ -14,7 +18,7 @@ class Card:
         return self.number
     
     def display_number(self):
-        print(f"The card is: {self.get_number()}")
+        print(Fore.BLACK + f"The card is: {self.get_number()}")
     """
     This method will display the number obtained by the set_number method.
     """

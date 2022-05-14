@@ -1,7 +1,9 @@
 from hashlib import new
 import game.player as player
 import game.card as card
-
+#Module to print with colors
+import colorama
+from colorama import Fore
 
 def start():
 
@@ -21,9 +23,9 @@ def start():
         player1.display_card()
         #The current card is deplayed
 
-        guess = input("Higher or lower? [h/l] ")
+        guess = input(Fore.BLACK + "Higher or lower? [h/l] ")
         if guess.lower() != "h" and guess.lower() != "l":
-            print("Incorrect entry, please use 'h' or 'l'.")
+            print(Fore.RED + "Incorrect entry, please use 'h' or 'l'.")
         else:
             new_card = card.Card()
             print(f"Next card was: {new_card.get_number()}")
@@ -65,13 +67,13 @@ def start():
             if player1.points != 0:
                 game = True 
                 while game:  
-                    play = input("Play again? [y/n] ")
+                    play = input(Fore.BLACK + "Play again? [y/n] ")
                     if play.lower() != "y" and play.lower() != "n":
-                        print("Incorrect entry, please use 'y' or 'n'.")
+                        print(Fore.RED + "Incorrect entry, please use 'y' or 'n'.")
                     else:
                         game = False
 
-    print("Thanks for playing!")
+    print(Fore.BLUE + "Thanks for playing!")
 
 start()
         
