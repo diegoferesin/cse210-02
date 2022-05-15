@@ -1,22 +1,24 @@
 import random
-#Module to print with colors
+# Module to print with colors
 import colorama
 from colorama import Fore
 
+
 class Card:
     def __init__(self):
-        self.number = random.randint(1,13)
+        self.number = random.randint(1, 13)
     """
     Individual cards are represented as a number from 1 to 13.
     Attributes:
         number (int): The value of the card
     """
+
     def get_number(self):
         '''
         Return the value of the card
         '''
         return self.number
-    
+
     def display_number(self):
         print(Fore.BLACK + f"The card is: {self.get_number()}")
     """

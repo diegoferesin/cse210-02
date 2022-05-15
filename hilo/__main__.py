@@ -1,27 +1,28 @@
 from hashlib import new
 import game.player as player
 import game.card as card
-#Module to print with colors
+# Module to print with colors
 import colorama
 from colorama import Fore
+
 
 def start():
 
     player1 = player.Player()
-    play="y"
+    play = "y"
 
     """
     An intance of player is created.
     The game is set to play
     """
 
-    while player1.points>0 and play.lower()=="y":
+    while player1.points > 0 and play.lower() == "y":
         """
         The game will continue as the player has > 0 points
         and decides to keep playing.
         """
         player1.display_card()
-        #The current card is deplayed
+        # The current card is deplayed
 
         guess = input(Fore.BLACK + "Higher or lower? [h/l] ")
         if guess.lower() != "h" and guess.lower() != "l":
@@ -47,11 +48,10 @@ def start():
             """
             The new card is compared with the current card, if played guessed correctly point are added, if not substracted. If it has the same value, nothing happens.
 
-            """        
+            """
 
             player1.card = new_card
-            #The new card is now the Player's card.
-
+            # The new card is now the Player's card.
 
             if player1.points <= 0:
                 player1.points = 0
@@ -62,11 +62,11 @@ def start():
             In order to be more visual appealing the score will not go under 0.
             """
 
-            player1.display_points()   
-            #points displayed.
+            player1.display_points()
+            # points displayed.
             if player1.points != 0:
-                game = True 
-                while game:  
+                game = True
+                while game:
                     play = input(Fore.BLACK + "Play again? [y/n] ")
                     if play.lower() != "y" and play.lower() != "n":
                         print(Fore.RED + "Incorrect entry, please use 'y' or 'n'.")
@@ -75,5 +75,5 @@ def start():
 
     print(Fore.BLUE + "Thanks for playing!")
 
+
 start()
-        

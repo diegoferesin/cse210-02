@@ -1,4 +1,6 @@
 from game.card import Card
+
+
 class Player:
     """
         The player starts the game with 300 points
@@ -9,6 +11,7 @@ class Player:
         Attributes:
             points (int): keep track of the player's success in the game
     """
+
     def __init__(self):
         self.points = 300
         self.card = Card()
