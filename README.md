@@ -41,13 +41,18 @@ root                    (project root folder)
 ## Required Technologies
 
 ---
-
 - Python 3.8.0
+
+## UML Diagram
+
+---
+<img src="UML-Diagram.jpg" widt="500px">
 
 ## Authors
 
 ---
 
+<<<<<<< HEAD
 - Diego Feresin
 - Emma Lund
 - Nestor Rivera
@@ -71,3 +76,10 @@ Cards
 
 responsibilities: number of cards int (ramdom card from 1 to 13) 
 behaviors: display ramdom card (show random card from 1 to 13)
+=======
+- Diego Feresin (diegoferesin@gmail.com)
+- Emma Lund (lun21010@byui.edu)
+- Nestor Rivera (riv21007@byui.edu)
+- Juan Castellani (cas22009@byui.edu)
+- Kennette Guevara (rod21023@byui.edu)
+>>>>>>> 7c9cc3e3d7d060aafc93376e62ff077c71667aa4
