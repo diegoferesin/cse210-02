@@ -48,15 +48,6 @@ root                    (project root folder)
 ---
 <img src="UML-Diagram.jpg" widt="500px">
 
-## Authors
-
----
-- Diego Feresin (diegoferesin@gmail.com)
-- Emma Lund (lun21010@byui.edu)
-- Nestor Rivera (riv21007@byui.edu)
-- Juan Castellani (cas22009@byui.edu)
-- Kennette Guevara (rod21023@byui.edu)
-
 ## Define of classes:
 
 ---
@@ -74,3 +65,12 @@ Cards
 
 responsibilities: number of cards int (ramdom card from 1 to 13) 
 behaviors: display ramdom card (show random card from 1 to 13)
+
+## Authors
+
+---
+- Diego Feresin (diegoferesin@gmail.com) - UML Diagrams and github adminitrator
+- Emma Lund (lun21010@byui.edu) - create the Class and the methods for each class
+- Nestor Rivera (riv21007@byui.edu) - Responsabilities and behaviors for each class
+- Juan Castellani (cas22009@byui.edu) - main file to run the game and verify the classes functionability
+- Kennette Guevara (rod21023@byui.edu) - visually apealing enhancements, validate inputs
