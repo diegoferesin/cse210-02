@@ -69,7 +69,7 @@ behaviors: display ramdom card (show random card from 1 to 13)
 ## Authors
 
 ---
-- Diego Feresin (diegoferesin@gmail.com) - UML Diagrams and github adminitrator
+- Diego Feresin (diegoferesin@gmail.com) - UML Diagrams and github administrator
 - Emma Lund (lun21010@byui.edu) - create the Class and the methods for each class
 - Nestor Rivera (riv21007@byui.edu) - Responsabilities and behaviors for each class
 - Juan Castellani (cas22009@byui.edu) - main file to run the game and verify the classes functionability
