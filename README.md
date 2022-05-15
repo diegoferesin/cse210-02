@@ -51,8 +51,6 @@ root                    (project root folder)
 ## Authors
 
 ---
-
-<<<<<<< HEAD
 - Diego Feresin
 - Emma Lund
 - Nestor Rivera
